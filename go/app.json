@@ -1,0 +1,19 @@
+{
+    "name": "cloud-run-demo-go",
+    "env": {
+        "DD_API_KEY": {
+            "description": "Your Datadog's API KEY (see: https://docs.datadoghq.com/account_management/api-app-keys)",
+            "required": true
+        },
+        "DD_SITE": {
+            "description": "The Datadog instance to be used if not defined US1 will be the default"
+        }
+    },
+    "options": {
+        "allow-unauthenticated": true,
+        "memory": "512Mi",
+        "cpu": "1",
+        "port": 80,
+        "http2": false
+    }
+}
